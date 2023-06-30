@@ -7,7 +7,7 @@
   <style>
     /* CSS styles for the website */
     body {
-      background-color: #222;
+      background-color: #000000;
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -28,9 +28,9 @@
 
     .button {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 8px 16px;
       margin: 10px;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
       text-decoration: none;
       color: #fff;
@@ -41,6 +41,12 @@
 
     .button:hover {
       background-color: #0056b3;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
 
     .search-bar {
@@ -68,19 +74,62 @@
     .search-bar input[type="submit"]:hover {
       background-color: #0056b3;
     }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .customer-support {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .questions {
+      text-align: left;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Vertex Enterprises</h1>
 
-    <a class="button" href="#">Login</a>
-    <a class="button" href="#">Signup</a>
+    <div class="top-right">
+      <a class="button" href="#">Login</a>
+      <a class="button" href="#">Signup</a>
+    </div>
 
     <div class="search-bar">
       <input type="text" placeholder="Search...">
       <input type="submit" value="Search">
     </div>
+
+    <div class="customer-support">
+      <h2 class="customer-support">Customer Support</h2>
+      <p>If you have any questions or need assistance, please feel free to reach out to our customer support team.</p>
+    </div>
+
+    <div class="questions">
+      <h2 class="questions">Questions</h2>
+      <p>Here are some frequently asked questions:</p>
+      <ul>
+        <li>How can I contact your support team?</li>
+        <li>What are your business hours?</li>
+        <li>Do you offer refunds?</li>
+      </ul>
+    </div>
   </div>
+
+  <footer>
+    Vertex Enterprises - 2023. All rights reserved.
+  </footer>
 </body>
 </html>
